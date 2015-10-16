@@ -1,0 +1,16 @@
+Create view V1_Brooklyn AS
+	Select * From Child
+	Where borough in ('Bronx', 'Manhattan', 'Queens', 'Brookyln', 'Staten Island');
+
+create view V2_Bronx as
+	Select * From Child
+	Where borough = 'Bronx';
+
+create view V3_Manhattan as
+	Select * From Child
+	Where borough = 'Manhattan';
+
+create view V4_Queens as
+	Select * From Child
+	Where borough = 'Queens';
+
